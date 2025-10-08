@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- agregamos los enlaces a CSS y js -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <title>Tienda de Frutas</title>
+</head>
+
+<body onload="init()">
+    <!--agregamos la barra de busqueda -->
+    <header>
+        <h2>Fruteria</h2>
+        <p id="nombre-apellido"></p>
+        <nav>
+            <label for="barraBusqueda">Buscar:</label>
+            <input id="barraBusqueda" type="text">
+        </nav>
+        <p id="contadorCarrito"></p>
+    </header>
+    <!-- parte del menu donde se muestran los productos y el carrito-->
+    <main>
+        <h1>Nuestras Frutas Disponibles</h1>
+        <section id="contenedorProductos"></section>
+        <aside>
+            <h3>Carrito</h3>
+            <div id="contenedorCarrito"></div>
+            <p id="totalCarrito"><p>
+            <button id="VaciarCarrito">Vaciar Carrito</button>
+        </aside>
+    </main>
+</body>
+</html>
